@@ -34,6 +34,6 @@ global class deleteConvetedLeadRecords implements Database.Batchable<SObject>,Sc
     * @description schedular execution
     **/
     public void execute(SchedulableContext sc) {
-        Database.executeBatch(new BatchToDeletePandadocLogs( ), 200);
+        Database.executeBatch(new deleteConvetedLeadRecords( ), 200);
     }
 }
